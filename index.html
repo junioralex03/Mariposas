@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Butterflies</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Div con las nubes -->
+  <div class="cloud-container">
+    <img src="1.png" alt="Cloud 1">
+    <img src="2.png" alt="Cloud 2">
+    <img src="3.png" alt="Cloud 3">
+    <img src="4.png" alt="Cloud 4">
+  </div>
+
+  <!-- Div con el encabezado "Fulanito" -->
+
+  <!-- Div con las mariposas -->
+  <div id="forest"></div>
+<div class="wrapper">
+  <h1 class="text">Juniorr</h1>
+</div>
+  <css-doodle id="dood"></css-doodle>
+
+  <script src='https://unpkg.com/css-doodle@0.7.2/css-doodle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+
+  <script src="./script.js"></script>
+  <script>$(document).ready(function () {
+      $(".text").lettering("words").children("span").lettering();
+    });</script>
+</body>
+
+</html>
