@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 
-html, body  {
-overflow: hidden;
-  height: 100vh;
-  width: 100vw;
- /* background-image: radial-gradient(circle farthest-corner at 100% 0%, #ffa500, 50%, lightblue 90%);*/
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
   background-attachment: fixed;
-  background-image: url('fondo.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la URL de la imagen que desees usar */
+  background-image: url('fondo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Monoton', cursive;
-  margin: auto;
-  overflow: hidden;
-  padding: 60px 0px;
-  outline: none;
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -88,8 +85,8 @@ overflow: hidden;
   }
 }
 .tree {
-  position: absolute;
-  bottom: 0px;
+  position: fixed; /* Cambia a 'fixed' para que los árboles se mantengan en la parte inferior */
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
