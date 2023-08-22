@@ -188,30 +188,30 @@ h1 {
   z-index: 7;
 }
 .text > span > span:nth-of-type(2) {
-	left: 120px;
+	/*left: 120px;*/
   z-index: 6;
   animation: animate 4s linear alternate infinite;
 }
 .text > span > span:nth-of-type(3) {
-	left: 240px;
+	/* left: 240px; */
   z-index: 5;
 }
 .text > span > span:nth-of-type(4) {
-	left: 410px;
+	/* left: 410px; */
   z-index: 4;
   animation: animate 6s linear alternate-reverse infinite;
 }
 .text > span > span:nth-of-type(5) {
-	left: 440px;
+	/* left: 440px; */
   z-index: 3;
 }
 .text > span > span:nth-of-type(6) {
-	left: 585px;
+	/* left: 585px; */
   z-index: 2;
   animation: animate 5s linear alternate infinite;
 }
 .text > span > span:nth-of-type(7) {
-	left: 720px;
+	/* left: 720px; */
 	z-index: 1;
 }
 
