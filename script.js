@@ -3,13 +3,16 @@ function getCss(gridSize, is3d) {
   @grid:${gridSize}/ 100%;
   width:100vw;
   height:200vh;
+  z-index: 100; /* Asegura que esté por encima de todo */
   }
   :container {
     transform-style:${is3d ? "preserve-3d" : "flat"};
+    z-index: 100;
   }
   :after {
     content:@p(🦋);
     font-size: 24px;
+    z-index: 100;
   } 
   @random(.15) {
     filter:hue-rotate(@r(-180deg, 180deg));
@@ -19,7 +22,8 @@ function getCss(gridSize, is3d) {
   will-change:transform;
   position:absolute;
   left:@r(100%);
-  bottom:@r(0px, 180vh);
+  bottom:@r(0px, 100vh);
+  z-index: 100; /* Añadido para asegurar que esté por encima */
  
   @keyframes fly {
     0% {
@@ -55,7 +59,7 @@ function getCss(gridSize, is3d) {
   }
 `;
   return doodl;
-}
+} 
 
 /*INIT*/
 var body = document.querySelector("body");
